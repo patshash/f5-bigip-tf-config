@@ -18,9 +18,9 @@ data "terraform_remote_state" "f5" {
 }
 
 provider "bigip" {
-  address  = "${data.terraform_remote_state.f5.outputs.bigip_mgmt_dns}"
+  address  = [data.terraform_remote_state.f5.outputs.bigip_mgmt_dns]
   username = var.username
-  password = "${data.terraform_remote_state.f5.outputs.password}"
+  password = data.terraform_remote_state.f5.outputs.password.value.result
   port = var.port
 }
 
