@@ -7,10 +7,20 @@ terraform {
   required_version = ">= 0.13"
 }
 
+data "terraform_remote_state" "f5" {
+  backend = "remote"
+  config = {
+    organization = "pcarey-org"
+    workspaces = {
+      name = "f5-bigip-tf-deploy"
+    }
+  }
+}
+
 provider "bigip" {
-  address  = var.hostname
+  address  = data.terraform_remote_state.f5.outputs.bigip_mgmt_dns
   username = var.username
-  password = var.password
+  password = data.terraform_remote_state.f5.outputs.password
   port = var.port
 }
 
