@@ -21,7 +21,7 @@ provider "bigip" {
   //address  = [data.terraform_remote_state.f5.outputs.bigip_mgmt_dns[0]]
   address = "${join(" ", data.terraform_remote_state.f5.outputs.bigip_mgmt_dns)}"
   username = var.username
-  password = data.terraform_remote_state.f5.outputs.password.value.result
+  password = data.terraform_remote_state.f5.outputs.password.result
   port = var.port
 }
 
