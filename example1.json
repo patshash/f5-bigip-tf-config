@@ -21,7 +21,7 @@
                  ],
                  "pool": "Region1_Pool"
                  },
-                 "web_pool": {
+                 "Region1_Pool": {
                      "class": "Pool",
                      "monitors": [
                          "http"
@@ -47,7 +47,7 @@
                  ],
                  "pool": "Region2_Pool"
                  },
-                 "web_pool": {
+                 "Region2_Pool": {
                      "class": "Pool",
                      "monitors": [
                          "http"
