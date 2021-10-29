@@ -19,7 +19,7 @@
                  "virtualAddresses": [
                      "10.0.2.10"
                  ],
-                 "pool": "web_pool"
+                 "pool": "Region1_Pool"
                  },
                  "web_pool": {
                      "class": "Pool",
@@ -45,7 +45,7 @@
                  "virtualAddresses": [
                      "10.0.2.11"
                  ],
-                 "pool": "web_pool_2"
+                 "pool": "Region2_Pool"
                  },
                  "web_pool": {
                      "class": "Pool",
