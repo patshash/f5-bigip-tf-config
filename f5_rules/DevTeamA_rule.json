@@ -1,5 +1,5 @@
 {
-    "rule_name" : "web_frontend",
+    "rule_name" : "Web_App_A",
     "rule_description" : "project A web frontend",
     "tenant" : "DevTeamA",
     "vip_address" : "10.10.10.100",
