@@ -1,4 +1,4 @@
-variable "tenant" {
+/*variable "tenant" {
   type = string
 }
 variable "vip_address" {
@@ -12,7 +12,7 @@ variable "rule_name" {
 variable "rule_description" {
   type = string
 }
-
+*/
 locals {
   # Take a directory of JSON files, read each one and bring them in to Terraform's native data set
   f5_rules = [ for file in fileset(path.module, "f5_rules/*.json") : jsondecode(file(file)) ]
