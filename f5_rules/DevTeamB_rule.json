@@ -1,0 +1,7 @@
+{
+    "rule_name" : "Web App B",
+    "rule_description" : "project B web frontend",
+    "tenant" : "DevTeamB",
+    "vip_address" : "20.20.20.100"
+}
+
