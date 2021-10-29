@@ -31,6 +31,8 @@ data "template_file" "init" {
     RULE_DESCRIPTION = each.value.rule_description
     TENANT = each.value.tenant
     VIP_ADDRESS = each.value.vip_address
+    POOL_MEMBER1 = each.value.pool_member1
+    POOL_MEMBER2 = each.value.pool_member2
   }
 }
 resource "bigip_as3"  "as3-example" {

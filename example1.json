@@ -8,7 +8,7 @@
          "id": "example-declaration-01",
          "label": "Sample 1",
          "remark": "Simple HTTP application with round robin pool",
-         "Sample_01": {
+         "MyFirstTenant": {
              "class": "Tenant",
              "defaultRouteDomain": 0,
              "Application_1": {

@@ -30,8 +30,8 @@
                          {
                              "servicePort": 80,
                              "serverAddresses": [
-                                 "192.0.50.100",
-                                 "192.0.50.110"
+                                 "${POOL_MEMBER1}",
+                                 "${POOL_MEMBER2}"
                              ]
                          }
                      ]

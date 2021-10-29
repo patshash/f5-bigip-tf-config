@@ -2,6 +2,7 @@
     "rule_name" : "Web_App_B",
     "rule_description" : "project B web frontend",
     "tenant" : "DevTeamB",
-    "vip_address" : "20.20.20.100"
+    "vip_address" : "20.20.20.100",
+    "pool_member1" : "30.30.30.31",
+    "pool_member2" : "40.40.40.41"
 }
-
