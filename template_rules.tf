@@ -34,6 +34,7 @@ data "template_file" "init" {
   }
 }
 resource "bigip_as3"  "as3-example" {
-     as3_json = data.template_file.init.rendered
+  for_each = local.f5_rules_map
+     as3_json = data.template_file.init[each.key].rendered
      #tenant_filter = var.tenant
 }
