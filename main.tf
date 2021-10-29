@@ -37,7 +37,7 @@ resource "bigip_ltm_pool" "pool" {
 }
 
 resource "bigip_ltm_pool" "second_pool" {
-  name                   = "/Common/Shared_Pool_Prod"
+  name                   = "/Common/Shared_Pool_QA"
   load_balancing_mode    = "round-robin"
   minimum_active_members = 1
   monitors               = [bigip_ltm_monitor.monitor.name]
