@@ -19,7 +19,7 @@ locals {
   # Take that data set and format it so that it can be used with the for_each command by converting it to a map
   # where each top level key is a unique identifier.
   # In this case I am using the common_name key from my example JSON files
-  f5_rules_map = {for rule_block in toset(local.f5_rules): rule_block.rule_name => rules}
+  f5_rules_map = {for rule_block in toset(local.f5_rules): rule_block.rule_name => rule_block}
 }
 
 
