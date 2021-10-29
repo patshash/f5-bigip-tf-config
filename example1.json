@@ -36,7 +36,7 @@
                          }
                      ]
                  }
-             }
+             },
              "Application_2": {
                  "class": "Application",
                  "template": "http",
