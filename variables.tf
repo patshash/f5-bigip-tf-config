@@ -1,11 +1,3 @@
-variable "hostname" {
-  type        = string
-}
-
-variable "password" {
-  type        = string
-}
-
 variable "username" {
   type        = string
 }
