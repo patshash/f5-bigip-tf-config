@@ -28,7 +28,7 @@
                      ],
                      "members": [
                          {
-                             "servicePort": 80,
+                             "servicePort": ${SERVICE_PORT},
                              "serverAddresses": [
                                  "${POOL_MEMBER1}",
                                  "${POOL_MEMBER2}"

@@ -4,5 +4,6 @@
     "tenant" : "DevTeamA",
     "vip_address" : "10.10.10.100",
     "pool_member1" : "50.50.50.51",
-    "pool_member2" : "60.60.60.61"
+    "pool_member2" : "60.60.60.61",
+    "service_port" : "80"
 }
